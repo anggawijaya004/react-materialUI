@@ -11,11 +11,10 @@ const styles = makeStyles((theme) => ({
     },
     textBox: {
         background: 'white',
-        color: 'linear-gradient( #F200FF 100%, #8459FF 0%)',
         height: '200px'
     },
-    font: {
-        colorAdjust: 'linear-gradient(91.85deg, #8459FF 0%, #F200FF 100%)'
+    fontColor: {
+        color: '#8459FF'
     },
     button: {
         width: '264px',
@@ -39,7 +38,7 @@ function Home () {
 
     function keluar () {
         localStorage.clear()
-        history.push('/login')
+        history.push('/')
     }
     
     return (
@@ -48,7 +47,7 @@ function Home () {
             <Box boxShadow={2} borderRadius={10} position="absolute" top='181px' marginX='0px' paddingTop='62px' paddingBottom='62px' left= '427px' zIndex="tooltip" width="40%" className={classes.textBox}>
                     <Box width={1} display='flex' justifyContent='center'>
                         <Box width='465px'>
-                        <Typography className={classes.font} variant='h4'>tampilkan alamat email yang digunakan untuk login</Typography>
+                        <Typography className={classes.fontColor} variant='h4'>tampilkan alamat email yang digunakan untuk login</Typography>
                         </Box>
                     </Box>
             {email? <Typography className={classes.font} variant='h4'>{email}</Typography>: <Box height='64px'></Box> }

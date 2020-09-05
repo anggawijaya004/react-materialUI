@@ -71,7 +71,7 @@ function Login () {
 
     function submit () {
         localStorage.setItem('email', email)
-        history.push('/')
+        history.push('/dashboard')
     }
 
     return (
