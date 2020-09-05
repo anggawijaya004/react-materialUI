@@ -36,15 +36,15 @@ function App() {
     <ThemeProvider theme={theme}>
     <div className="App">
       <Switch>
-        <Route exact path="/">
+        <Route path="/home">
           <Home />
         </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/signup">
-            <Signup />
-          </Route>
+        <Route path="/signup">
+          <Signup />
+        </Route>
+        <Route path="/">
+          <Login />
+        </Route>
       </Switch>
     </div>
     </ThemeProvider>

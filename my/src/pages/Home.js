@@ -14,7 +14,7 @@ const styles = makeStyles((theme) => ({
         height: '200px'
     },
     fontColor: {
-        color: 'red'
+        color: '#8459FF'
     },
     button: {
         width: '264px',
@@ -38,7 +38,7 @@ function Home () {
 
     function keluar () {
         localStorage.clear()
-        history.push('/login')
+        history.push('/')
     }
     
     return (

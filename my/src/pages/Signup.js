@@ -54,7 +54,7 @@ function Signup () {
     }
 
     function submit () {
-        history.push('/')
+        history.push('/home')
     }
 
     return (
@@ -77,10 +77,10 @@ function Signup () {
                                 <TextField onChange={changePassword} type="password" className={classes.input} id="outlined-basic" label="Password" variant="outlined" />
                                 <TextField onChange={changeConfirmPassword} type="password" id="outlined-basic" className={classes.input} label="Ulangi Password" variant="outlined" />
                                 </Box>
-                                <Button variant="contained" className={classes.submit}>Daftar</Button>
+                                <Button onClick={submit} variant="contained" className={classes.submit}>Daftar</Button>
                             </form>
                             <div className="login bottom">
-                                <p>Sudah punya akun? <Link className="daftar" to="/login">Masuk</Link></p>
+                                <p>Sudah punya akun? <Link className="daftar" to="/">Masuk</Link></p>
                                 
                             </div>
                         </div>
