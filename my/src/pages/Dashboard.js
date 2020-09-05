@@ -48,7 +48,7 @@ const style = makeStyles((theme) => ({
         width: '64px',
     },
     boxDate: {
-        marginTop: "12px",
+        marginTop: "35px",
         height: "80px",
         backgroundColor: "white",
         alignItems: "center",
@@ -59,7 +59,7 @@ const style = makeStyles((theme) => ({
         marginTop: "12px",
         display:"flex",
         
-        height: "80vh"
+        height: "72vh"
 
     },
     bottomLeft: {
@@ -93,14 +93,15 @@ const style = makeStyles((theme) => ({
 
     },
     buttonField: {
-        width: "290px"
+        width: "290px",
+        color: "#8459FF",
     },
     buttonRead: {
         color: "#E23F81",
         background: "rgba(226, 63, 129, 0.1)",
         borderRadius: "2px",
         width: "100px"
-    }
+    },
    
 
 }))
@@ -163,7 +164,7 @@ function Dasboard() {
                 <Box className={classes.boxBottom}>
                     <Grid container item justifyContent="center">
                         <Box className={classes.bottomLeft}>
-                            <Box marginTop='35px'  justifyContent="center">
+                            <Box marginTop='35px'>
                                 <Button className={classes.buttonSm1} ><Typography>Lorem</Typography></Button>
                             </Box>
                             <Box marginTop='14px'>
@@ -243,11 +244,11 @@ function Dasboard() {
                                         </Box>
                                     </Box>
                                     <Box width="100%" justifyContent="center">
-                                        <Button color="#8459FF" className={classes.buttonField}>Add Task</Button>
+                                        <Button variant="outlined" size="small" className={classes.buttonField}>Add Task</Button>
                                     </Box>
                                 </Box>
                                 <Box width={1/3} className={classes.card}>
-                                <Box>
+                                    <Box>
                                         <Typography variant="subtitle1">Section 1</Typography>
                                     </Box>
                                     <Box maxHeight="400px" overflow="scroll">
@@ -291,7 +292,7 @@ function Dasboard() {
                                         
                                     </Box>
                                     <Box width="100%" justifyContent="center">
-                                        <Button color="#8459FF" className={classes.buttonField}>Add Task</Button>
+                                        <Button variant="outlined" size="small" className={classes.buttonField}>Add Task</Button>
                                     </Box>
                                 </Box>
                                 <Box width={1/3} className={classes.card}>
@@ -375,7 +376,7 @@ function Dasboard() {
                                         
                                     </Box>
                                     <Box width="100%" justifyContent="center">
-                                        <Button color="#8459FF" className={classes.buttonField}>Add Task</Button>
+                                        <Button variant="outlined" size="small" className={classes.buttonField}>Add Task</Button>
                                     </Box>
                                 </Box>
                                 
